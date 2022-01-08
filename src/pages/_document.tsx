@@ -1,3 +1,4 @@
+/* eslint-disable react/self-closing-comp */
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
@@ -14,6 +15,11 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script
+            async
+            defer
+            src="https://static.cdn.prismic.io/prismic.js?new=true&repo=spacetravellings"
+          ></script>
         </body>
       </Html>
     );
